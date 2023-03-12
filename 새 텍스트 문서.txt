@@ -1,13 +1,43 @@
 function setup() {
- 
   createCanvas(400, 400);
-  background(200);
+  background(100);
 }
-function draw(){
+
+function draw() {
+  noStroke();
   
- noStroke();
-  fill(122, 122, 122);
+  // 눈사람 그리기
+  fill(255);
   circle(200, 300, 200);
   circle(200, 150, 150);
-
+  
+  // top hat 그리기
+  fill(0);
+  rect(155, 75, 90, 10);
+  rect(170, 20, 60, 60);
+  fill(255,0,0);
+  rect(170, 63, 60, 12);
+  
+  // 눈 그리기
+  fill(0);
+  ellipse(160, 130, 30, 30);
+  ellipse(240, 130, 30, 30);
+  
+  // 입 그리기
+  noFill();
+  stroke(255, 0, 0);
+  strokeWeight(4);
+  arc(200, 160, 60, 60, 0.1*PI, 0.9*PI);
+  
+  // 손 그리기
+  stroke(0);
+  strokeWeight(6);
+  line(110, 250, 50, 180);
+  line(290, 250, 350, 180);
+  
+  // 단추 그리기
+  fill(0);
+  circle(200, 250, 15);
+  circle(200, 300, 15);
+  circle(200, 350, 15);
 }
